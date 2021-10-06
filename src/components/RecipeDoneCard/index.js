@@ -25,7 +25,7 @@ const RecipeDoneCard = ({ recipe, index, history, shouldHaveFavorite,
 
   const handleShareBtn = (recipeId, recipeType, recipeIndex) => {
     const isMeal = recipeType === 'comida';
-    copy(`http://localhost:3000/${isMeal ? 'comidas/' : 'bebidas/'}${recipeId}`);
+    copy(`https://trybe-recipes.vercel.app/${isMeal ? 'comidas/' : 'bebidas/'}${recipeId}`);
     setShouldDisplayMessage(true);
     console.log(recipeIndex);
     // const h4 = document.createElement('h4');

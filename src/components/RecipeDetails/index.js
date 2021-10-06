@@ -58,7 +58,7 @@ const RecipeDetails = ({ recipe, isMeal, showBtn, history }) => {
   const [shouldDisplayMessage, setShouldDisplayMessage] = useState(false);
   const handleCopy = () => {
     const routeWithoutInProgress = history.location.pathname.replace('/in-progress', '');
-    copy(`http://localhost:3000${routeWithoutInProgress}`);
+    copy(`https://trybe-recipes.vercel.app${routeWithoutInProgress}`);
     setShouldDisplayMessage(true);
   };
 

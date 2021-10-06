@@ -11,6 +11,7 @@ import CopyLinkModal from '../CopyLinkModal';
 import formatRecipeToFavorite from '../../utils/formatRecipeToFavorite';
 
 import style from './recipeInProgress.module.scss';
+import ButtonBack from '../ButtonBack';
 
 function RecipeInProgress({ recipe, isMeal }) {
   const [allChecked, setAllChecked] = useState(false);
@@ -54,7 +55,7 @@ function RecipeInProgress({ recipe, isMeal }) {
 
   const handleCopy = () => {
     const routeWithoutInProgress = history.location.pathname.replace('/in-progress', '');
-    copy(`http://localhost:3000${routeWithoutInProgress}`);
+    copy(`https://trybe-recipes.vercel.app${routeWithoutInProgress}`);
     setShouldDisplayMessage(true);
   };
 
@@ -83,14 +84,10 @@ function RecipeInProgress({ recipe, isMeal }) {
     }
   };
 
-  const goBack = () => {
-    history.goBack();
-  };
-
   return (
     <main className={ style.inProgress }>
       <div className={ style.header }>
-        <button type="button" onClick={ goBack }>&#129044;</button>
+        <ButtonBack />
         <h2 data-testid="recipe-title">{isMeal ? recipe.strMeal : recipe.strDrink}</h2>
         <div>
           <input
