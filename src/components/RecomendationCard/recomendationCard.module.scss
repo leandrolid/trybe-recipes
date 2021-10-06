@@ -1,0 +1,33 @@
+.recomendationItem {
+    width: 35vw;
+    margin: 1rem 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    
+    img {
+      width: 100%;
+    }
+  
+}
+
+.title {
+  border-radius: inherit;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+  background: var(--blue-800);
+  background: linear-gradient(0deg, rgb(26, 26, 43) 0%, rgba(60, 60, 85, 0.514) 70%, #4555ff00 100%);
+  padding: 1rem;
+  text-align: left;
+  
+  h5 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--white);
+  }
+}

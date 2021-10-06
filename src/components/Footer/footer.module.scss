@@ -1,0 +1,16 @@
+.footer {
+  bottom: 0;
+  position: fixed;
+  width: 100vw;
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 0.75rem 0;
+  background: var(--blue-800);
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(212, 212, 223, 0.863) 70%, #ffffff07 100%);
+
+  button {
+    background: none;
+  }
+}

@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+
+:root {
+  --white: #FFF;
+  --transparent: rgb(0, 0, 0,0);
+  
+  --gray-50: #fafcfe;
+  --gray-100: #f1f3f7;
+  --gray-200: #c4c9c7;
+  --gray-500: #5d5f6b;
+  --gray-800: #1b1c1f;
+  
+  --green-300: #52f59b;
+  --green-500: #04D361;
+  --red-500: #df4227;
+  
+  --blue-transparent: #4555ff1c;
+  --blue-300: #4553FF;
+  --blue-400: #3540C4; 
+  --blue-500: #1E2570;
+  --blue-800: #191E5C;
+}
+
+body, input, textarea, button {
+  font: 500 1rem Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: var(--gray-500);
+}
+
+body {
+  background-color: var(--gray-50);
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  font-family: Roboto, sans-serif;
+  color: var(--gray-800);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--gray-100);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--gray-500);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-800);
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}

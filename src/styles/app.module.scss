@@ -1,0 +1,10 @@
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 7rem 0;
+  overflow-x: hidden;
+  // background-color: var(--gray-50);
+}

@@ -1,0 +1,14 @@
+.recomendationContent {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  width: 80vw;
+  margin: auto;
+}
+
+.recomendationContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  width: max-content;
+  gap: 1rem;
+}
