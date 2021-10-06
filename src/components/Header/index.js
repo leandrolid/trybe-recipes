@@ -3,11 +3,12 @@ import React, { useState } from 'react';
 import profileIcon from '../../images/profileIcon.svg';
 import searchIcon from '../../images/searchIcon.svg';
 import ButtonBack from '../ButtonBack';
+import ButtonHome from '../ButtonHome';
 import SearchBar from '../SearchBar';
 
 import style from './header.module.scss';
 
-const Header = ({ pageTitle, history, isMeal = true }) => {
+const Header = ({ pageTitle, history, isMeal }) => {
   const [showBar, setShowBar] = useState(false);
 
   const checkObj = {
@@ -31,16 +32,19 @@ const Header = ({ pageTitle, history, isMeal = true }) => {
           onClick={ () => history.push('/perfil') }
         />
         <h2 data-testid="page-title">{ pageTitle }</h2>
-        {checkObj[pageTitle]
-          ? (
+        { checkObj[pageTitle]
+          && (
             <input
               type="image"
               data-testid="search-top-btn"
               alt="search icon"
               src={ searchIcon }
               onClick={ handleSearchBtnClick }
-            />)
-          : <ButtonBack />}
+            />)}
+        { pageTitle !== 'Receitas Feitas' && !checkObj[pageTitle] && <ButtonBack /> }
+
+        { pageTitle === 'Receitas Feitas'
+          && <ButtonHome path={ isMeal ? 'comidas' : 'bebidas' } />}
       </header>
       { showBar
         && (

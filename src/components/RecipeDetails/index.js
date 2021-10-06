@@ -10,8 +10,8 @@ import StartRecipeBtn from '../StartRecipeBtn';
 import RecipesContext from '../../context/RecipesContext';
 
 import style from './recipeDetails.module.scss';
-import ButtonBack from '../ButtonBack';
 import CopyLinkModal from '../CopyLinkModal';
+import ButtonHome from '../ButtonHome';
 
 const copy = require('clipboard-copy');
 
@@ -65,7 +65,8 @@ const RecipeDetails = ({ recipe, isMeal, showBtn, history }) => {
   return (
     <main className={ style.details }>
       <div className={ style.header }>
-        <ButtonBack />
+        {/* <ButtonBack /> */}
+        <ButtonHome path={ isMeal ? 'comidas' : 'bebidas' } />
         <h2 data-testid="recipe-title">
           {isMeal ? recipe.strMeal : recipe.strDrink}
         </h2>
