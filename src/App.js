@@ -63,14 +63,13 @@ function App() {
               path="/explorar/comidas/area"
               component={ ExplorarComidasArea }
             />
-            <Route
-              exact
-              path="/explorar/bebidas/area"
-              component={ NotFound }
-            />
             <Route exact path="/perfil" component={ Perfil } />
             <Route exact path="/receitas-feitas" component={ ReceitasFeitas } />
             <Route exact path="/receitas-favoritas" component={ ReceitasFavoritas } />
+            <Route
+              path="/*"
+              component={ NotFound }
+            />
           </Switch>
         </RecipesContextProvider>
       </BrowserRouter>

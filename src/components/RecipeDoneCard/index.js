@@ -52,17 +52,17 @@ const RecipeDoneCard = ({ recipe, index, history, shouldHaveFavorite,
       />
       <div className={ style.title }>
         <div>
-          <h5 data-testid={ `${index}-horizontal-top-text` }>
-            { type === 'comida'
-              ? `${recipe.area} - ${recipe.category}` : recipe.alcoholicOrNot }
-          </h5>
           <Link
             to={ `/${recipe.type === 'comida' ? 'comidas/' : 'bebidas/'}${recipe.id}` }
           >
-            <h6 data-testid={ `${index}-horizontal-name` }>
+            <h5 data-testid={ `${index}-horizontal-name` }>
               { recipe.name }
-            </h6>
+            </h5>
           </Link>
+          <h6 data-testid={ `${index}-horizontal-top-text` }>
+            { type === 'comida'
+              ? `${recipe.area} - ${recipe.category}` : recipe.alcoholicOrNot }
+          </h6>
           <h6 data-testid={ `${index}-horizontal-done-date` }>{recipe.doneDate}</h6>
         </div>
         <div>

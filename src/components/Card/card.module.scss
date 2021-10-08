@@ -1,6 +1,6 @@
 .card {
-  width: 90vw;
-  height: 90vw;
+  width: 90%;
+  height: cal(width);
   margin: 1rem 0;
   position: relative;
   overflow: hidden;

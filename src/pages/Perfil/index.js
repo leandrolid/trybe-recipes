@@ -11,7 +11,10 @@ export default function Perfil({ history }) {
 
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem('user'));
-    if (user) setEmail(user.email);
+    if (user) {
+      const [username] = user.email.split('@');
+      setEmail(username);
+    }
   }, []);
 
   const goToLogin = () => {
