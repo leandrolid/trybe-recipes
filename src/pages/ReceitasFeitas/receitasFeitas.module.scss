@@ -23,3 +23,18 @@
     flex: 1;
   }
 }
+
+@media screen and ( min-width:480px ) {
+  .filters {
+    flex-direction: column;
+    align-self: flex-start;
+  }
+
+  .doneRecipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    grid-area: cards;
+    padding-right: 2rem;
+  }
+}

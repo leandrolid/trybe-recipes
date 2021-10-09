@@ -67,19 +67,21 @@ export default function ExplorarComidasArea({ history }) {
 
           </select>
 
-          {
-            meals.map((meal, index) => (
-              <Card
-                key={ meal.idMeal }
-                index={ index }
-                recipe={ meal }
-                recipeImage={ meal.strMealThumb }
-                recipeName={ meal.strMeal }
-                link={ `/comidas/${meal.idMeal}` }
-                ingredientsNumber={ meal.numberIngredients }
-              />
-            ))
-          }
+          <div className={ style.cardsContainer }>
+            {
+              meals.map((meal, index) => (
+                <Card
+                  key={ meal.idMeal }
+                  index={ index }
+                  recipe={ meal }
+                  recipeImage={ meal.strMealThumb }
+                  recipeName={ meal.strMeal }
+                  link={ `/comidas/${meal.idMeal}` }
+                  ingredientsNumber={ meal.numberIngredients }
+                />
+              ))
+            }
+          </div>
 
           <Footer />
         </>

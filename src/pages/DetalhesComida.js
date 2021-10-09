@@ -49,6 +49,7 @@ function DetalhesComida({ match: { params: { recipeId } }, history }) {
     if (inProgressRecipe) {
       const { meals } = JSON.parse(inProgressRecipe);
       if (meals[meal.idMeal]) setBtnText('Continuar Receita');
+      else setBtnText('Iniciar Receita');
     }
   }, [meal, setBtnText]);
 

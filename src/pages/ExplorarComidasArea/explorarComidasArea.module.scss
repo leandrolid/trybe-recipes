@@ -4,3 +4,17 @@
   font-size: 1.5rem;
   background-color: var(--white);
 }
+
+@media screen and ( min-width:480px ) {
+  .dropDown {
+    align-self: flex-start;
+    margin-left: 1rem;
+  }
+
+  .cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-right: 2rem;
+  }
+}

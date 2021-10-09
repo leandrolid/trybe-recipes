@@ -96,7 +96,7 @@ export default function Bebidas({ history }) {
             isCardsLoading
               ? <Loading />
               : (
-                <>
+                <div className={ style.cardsContainer }>
                   { drinks.map((drink, index) => (
                     <Card
                       key={ drink.idDrink }
@@ -108,7 +108,7 @@ export default function Bebidas({ history }) {
                       ingredientsNumber={ drink.numberIngredients }
                     />
                   )) }
-                </>
+                </div>
               )
           }
 

@@ -20,11 +20,16 @@
     
     &:hover {
       background-color: var(--blue-400);
-      
     }
 
     span {
       margin-right: 1rem;
     }
+  }
+}
+
+@media screen and ( min-width:480px ) {
+  .explore {
+    width: 95vw;
   }
 }

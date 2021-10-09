@@ -38,6 +38,8 @@ const RecipeRecomendations = ({ isMeal }) => {
                   name={ recipe.strDrink }
                   thumb={ recipe.strDrinkThumb }
                   index={ i }
+                  id={ recipe.idDrink }
+                  isMeal={ isMeal }
                 />
               );
             }
@@ -47,6 +49,8 @@ const RecipeRecomendations = ({ isMeal }) => {
                 name={ recipe.strMeal }
                 thumb={ recipe.strMealThumb }
                 index={ i }
+                id={ recipe.idMeal }
+                isMeal={ isMeal }
               />);
           })
         }

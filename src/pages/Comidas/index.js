@@ -97,7 +97,7 @@ export default function Comidas({ history }) {
             isCardsLoading
               ? <Loading />
               : (
-                <>
+                <div className={ style.cardsContainer }>
                   {
                     meals.map((meal, index) => (
                       <Card
@@ -111,7 +111,7 @@ export default function Comidas({ history }) {
                       />
                     ))
                   }
-                </>
+                </div>
               )
           }
 

@@ -55,3 +55,19 @@
 .instructions {
   color: var(--gray-500);
 }
+
+@media screen and ( min-width:480px ) {
+  .details {
+    width: 70vw;
+    margin: auto;
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    > img {
+      width: 70%;
+      margin: auto;
+    }
+  }
+}

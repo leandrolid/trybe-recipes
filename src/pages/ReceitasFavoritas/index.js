@@ -77,7 +77,9 @@ export default function ReceitasFavoritas({ history }) {
         </button>
       </div>
 
-      {favoriteRecipesTemp.length > 0
+      <div className={ style.favoriteRecipes }>
+
+        {favoriteRecipesTemp.length > 0
       && favoriteRecipesTemp.map((recipe, index) => (<RecipeDoneCard
         recipe={ recipe }
         index={ index }
@@ -86,6 +88,7 @@ export default function ReceitasFavoritas({ history }) {
         shouldHaveFavorite
         removeFavorite={ removeFavorite }
       />))}
+      </div>
     </>
   );
 }

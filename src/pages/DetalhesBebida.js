@@ -48,6 +48,7 @@ function DetalhesBebida({ match: { params: { recipeId } }, history }) {
       const { cocktails } = JSON.parse(inProgressRecipe);
 
       if (cocktails[drink.idDrink]) setBtnText('Continuar Receita');
+      else setBtnText('Iniciar Receita');
     }
   }, [drink, setBtnText]);
 

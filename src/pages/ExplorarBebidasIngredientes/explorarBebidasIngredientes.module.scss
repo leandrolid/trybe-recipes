@@ -5,3 +5,14 @@
   flex-wrap: wrap;
   width: 90%;
 }
+
+@media screen and ( min-width:480px ) {
+  .exploreIngredients {
+    width: 90vw;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-left: 1rem;
+  }
+}

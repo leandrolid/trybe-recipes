@@ -1,6 +1,6 @@
 .card {
   width: 90%;
-  height: cal(width);
+  // height: calc(width);
   margin: 1rem 0;
   position: relative;
   overflow: hidden;
@@ -8,6 +8,11 @@
   
   img {
     width: 100%;
+  }
+  
+  @media screen and ( min-width:480px ) {
+    width: 100%;
+    margin: 0;
   }
 }
 
@@ -36,3 +41,4 @@
     font-weight: 300;
   }
 }
+

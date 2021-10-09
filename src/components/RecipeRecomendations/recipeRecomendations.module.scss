@@ -12,3 +12,14 @@
   width: max-content;
   gap: 1rem;
 }
+
+@media screen and ( min-width:480px ) {
+  .recomendationContent {
+    width: 100%;
+  }
+
+  // .recomendationContainer {
+  //   height: 20rem;
+  // }
+}
+

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import profileIcon from '../../images/profileIcon.svg';
 import searchIcon from '../../images/searchIcon.svg';
 import ButtonBack from '../ButtonBack';
-import ButtonHome from '../ButtonHome';
+// import ButtonHome from '../ButtonHome';
 import SearchBar from '../SearchBar';
 
 import style from './header.module.scss';
@@ -41,10 +41,12 @@ const Header = ({ pageTitle, history, isMeal }) => {
               src={ searchIcon }
               onClick={ handleSearchBtnClick }
             />)}
-        { pageTitle !== 'Receitas Feitas' && !checkObj[pageTitle] && <ButtonBack /> }
+        {/* { pageTitle !== 'Receitas Feitas'
+        && !checkObj[pageTitle] && <ButtonBack /> } */}
+        {/* { pageTitle === 'Receitas Feitas'
+          && <ButtonHome path={ isMeal ? 'comidas' : 'bebidas' } />} */}
+        { !checkObj[pageTitle] && <ButtonBack /> }
 
-        { pageTitle === 'Receitas Feitas'
-          && <ButtonHome path={ isMeal ? 'comidas' : 'bebidas' } />}
       </header>
       { showBar
         && (

@@ -26,3 +26,9 @@
     background-color: var(--red-500);
   }
 }
+
+@media screen and ( min-width:480px ) {
+  .profile {
+    width: 95vw;
+  }
+}

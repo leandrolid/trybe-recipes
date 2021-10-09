@@ -1,6 +1,40 @@
+// .filters {
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   gap: 0.5rem;
+//   width: 90%;
+// }
+
 .filters {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
   width: 90%;
+
+  @media screen and ( min-width:480px ) {
+    grid-area: filters;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-left: 1rem;
+  }
+}
+
+.cardsContainer {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: center;
+  
+  @media screen and ( min-width:480px ) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    grid-area: cards;
+
+    // padding: 0 1rem;
+    padding-right: 2rem;
+  }
 }

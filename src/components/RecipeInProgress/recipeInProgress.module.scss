@@ -77,3 +77,19 @@
     font-weight: 700;
   }
 }
+
+@media screen and ( min-width:480px ) {
+  .inProgress {
+    width: 70vw;
+    margin: auto;
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    > img {
+      width: 70%;
+      margin: auto;
+    }
+  }
+}
