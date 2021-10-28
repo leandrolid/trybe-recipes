@@ -29,7 +29,9 @@
 
 ## Sobre o Trybe Recipes 
 
-O Trybe Recipes é um dos projetos feitos no curso da @Trybe, ele é um app para busca de receitas de comidas e bebidas, no qual você tem algumas opções para procura, como ingrediente, área, etc.
+O Trybe Recipes é um dos projetos feitos no curso da @Trybe, desenvolvi em grupo junto com o [Luiz Casimiro](https://github.com/luizcasimiro), [Pedro Verano](https://github.com/PedroVerano), [Rafhael de Andrade](https://github.com/rafhaeldeandrade) e [João Vieira](https://github.com/jonnyvieirausa). Foram 10 dias de projeto, que envolveu reuniões diárias, utilização de metodologias ágeis, como o Kanban e também desenvolvimento em pair programming.
+
+Ele é um app para busca de receitas de comidas e bebidas, no qual você tem algumas opções para procura, como ingrediente, área, etc.
 Os dados são cosumidos de duas APIs, a [TheMealDB](https://www.themealdb.com/) e o [TheCocktailDB](https://www.thecocktaildb.com/), ambos utilizando a versão gratuita de acesso.
 Para construção da interface foi utilizado React com a Context API e SASS.
 
